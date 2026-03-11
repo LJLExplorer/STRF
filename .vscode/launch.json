@@ -1,0 +1,332 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      // {
+      //   "name": "sh_file_debug",
+      //   "type": "debugpy",
+      //   "request": "attach",
+      //   "connect": {
+      //       "host": "localhost",
+      //       "port": 9501
+      //   }
+      // },
+      {
+        "name": "ETTh1_96_ema",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "run.py",
+        "args": [
+          "--is_training", "1",
+          "--root_path", "./dataset/ETT-small/", 
+          "--data_path", "ETTh1.csv",
+          "--model_id", "ETTh1_96_ema",
+          "--model", "xPatch",
+          "--data", "ETTh1",
+          "--features", "M",
+          "--seq_len", "96",
+          "--pred_len", "96",
+          "--enc_in", "7",
+          "--des", "Exp",
+          "--itr", "1",
+          "--batch_size", "2048",
+          "--learning_rate", "0.0001",
+          "--lradj", "sigmoid",
+          "--ma_type", "ema",
+          "--alpha", "0.3",
+          "--beta", "0.3",
+          // "--train_epochs", "200"
+        ],
+        "env": {
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "ETTh2_96_ema",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "run.py",
+        "args": [
+          "--is_training", "1",
+          "--root_path", "./dataset/ETT-small/",
+          "--data_path", "ETTh2.csv",
+          "--model_id", "ETTh2_96_ema",
+          "--model", "xPatch",
+          "--data", "ETTh2",
+          "--features", "M",
+          "--seq_len", "96",
+          "--pred_len", "96",
+          "--enc_in", "7",
+          "--des", "Exp",
+          "--itr", "1",
+          "--batch_size", "2048",
+          "--learning_rate", "0.0001",
+          "--lradj", "sigmoid",
+          "--ma_type", "ema",
+          "--alpha", "0.3",
+          "--beta", "0.3"
+        ],
+        "env": {
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "ETTm1_96_ema",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "run.py",
+        "args": [
+          "--is_training", "1",
+          "--root_path", "./dataset/ETT-small/",
+          "--data_path", "ETTm1.csv",
+          "--model_id", "ETTm1_96_ema",
+          "--model", "xPatch",
+          "--data", "ETTm1",
+          "--features", "M",
+          "--seq_len", "96",
+          "--pred_len", "96",
+          "--enc_in", "7",
+          "--des", "Exp",
+          "--itr", "1",
+          "--batch_size", "2048",
+          "--learning_rate", "0.0001",
+          "--lradj", "sigmoid",
+          "--ma_type", "ema",
+          "--alpha", "0.3",
+          "--beta", "0.3"
+        ],
+        "env": {
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "ETTm2_96_ema",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "run.py",
+        "args": [
+          "--is_training", "1",
+          "--root_path", "./dataset/ETT-small/",
+          "--data_path", "ETTm2.csv",
+          "--model_id", "ETTm2_96_ema",
+          "--model", "xPatch",
+          "--data", "ETTm2",
+          "--features", "M",
+          "--seq_len", "96",
+          "--pred_len", "96",
+          "--enc_in", "7",
+          "--des", "Exp",
+          "--itr", "1",
+          "--batch_size", "2048",
+          "--learning_rate", "0.0001",
+          "--lradj", "sigmoid",
+          "--ma_type", "ema",
+          "--alpha", "0.3",
+          "--beta", "0.3"
+        ],
+        "env": {
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "weather_96_ema",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "run.py",
+        "args": [
+          "--is_training", "1",
+          "--root_path", "./dataset/weather/",
+          "--data_path", "weather.csv",
+          "--model_id", "weather_96_ema",
+          "--model", "xPatch",
+          "--data", "custom",
+          "--features", "M",
+          "--seq_len", "96",
+          "--pred_len", "96",
+          "--enc_in", "21",
+          "--des", "Exp",
+          "--itr", "1",
+          "--batch_size", "1024",
+          "--learning_rate", "0.0001",
+          "--lradj", "sigmoid",
+          "--ma_type", "ema",
+          "--alpha", "0.3",
+          "--beta", "0.3"
+        ],
+        "env": {
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "traffic_96_ema",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "run.py",
+        "args": [
+          "--is_training", "1",
+          "--root_path", "./dataset/traffic/",
+          "--data_path", "traffic.csv",
+          "--model_id", "traffic_96_ema",
+          "--model", "xPatch",
+          "--data", "custom",
+          "--features", "M",
+          "--seq_len", "720",
+          "--pred_len", "96",
+          "--enc_in", "862",
+          "--des", "Exp",
+          "--itr", "1",
+          "--batch_size", "46",
+          "--learning_rate", "0.005",
+          "--lradj", "sigmoid",
+          "--ma_type", "ema",
+          "--alpha", "0.3",
+          "--beta", "0.3"
+        ],
+        "env": {
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "electricity_96_ema",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "run.py",
+        "args": [
+          "--is_training", "1",
+          "--root_path", "./dataset/electricity/",
+          "--data_path", "electricity.csv",
+          "--model_id", "electricity_96_ema",
+          "--model", "xPatch",
+          "--data", "custom",
+          "--features", "M",
+          "--seq_len", "720",
+          "--pred_len", "96",
+          "--enc_in", "321",
+          "--des", "Exp",
+          "--itr", "1",
+          "--batch_size", "128",
+          "--learning_rate", "0.001",
+          "--lradj", "sigmoid",
+          "--ma_type", "ema",
+          "--alpha", "0.3",
+          "--beta", "0.3"
+        ],
+        "env": {
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "exchange_96_ema",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "run.py",
+        "args": [
+          "--is_training", "1",
+          "--root_path", "./dataset/exchange_rate/",
+          "--data_path", "exchange_rate.csv",
+          "--model_id", "exchange_96_ema",
+          "--model", "xPatch",
+          "--data", "custom",
+          "--features", "M",
+          "--seq_len", "96",
+          "--pred_len", "96",
+          "--enc_in", "8",
+          "--des", "Exp",
+          "--itr", "1",
+          "--batch_size", "32",
+          "--learning_rate", "0.0001",
+          "--lradj", "sigmoid",
+          "--ma_type", "ema",
+          "--alpha", "0.3",
+          "--beta", "0.3"
+        ],
+        "env": {
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "solar_96_ema",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "run.py",
+        "args": [
+          "--is_training", "1",
+          "--root_path", "./dataset/",
+          "--data_path", "solar.txt",
+          "--model_id", "solar_96_ema",
+          "--model", "xPatch",
+          "--data", "Solar",
+          "--features", "M",
+          "--seq_len", "720",
+          "--pred_len", "96",
+          "--enc_in", "137",
+          "--des", "Exp",
+          "--itr", "1",
+          "--batch_size", "256",
+          "--learning_rate", "0.005",
+          "--lradj", "sigmoid",
+          "--ma_type", "ema",
+          "--alpha", "0.3",
+          "--beta", "0.3"
+        ],
+        "env": {
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "ILI_24_reg",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "run.py",
+        "args": [
+          "--is_training", "1",
+          "--root_path", "./dataset/illness/",
+          "--data_path", "national_illness.csv",
+          "--model_id", "ili_24_reg",
+          "--model", "xPatch",
+          "--data", "custom",
+          "--features", "M",
+          "--seq_len", "36",
+          "--label_len", "18",
+          "--pred_len", "24",
+          "--enc_in", "7",
+          "--des", "Exp",
+          "--itr", "1",
+          "--batch_size", "32",
+          "--learning_rate", "0.01",
+          "--lradj", "type3",
+          "--patch_len", "6",
+          "--stride", "3",
+          "--ma_type", "reg",
+          "--alpha", "0.3",
+          "--beta", "0.3"
+        ],
+        "env": {
+          "CUDA_VISIBLE_DEVICES": "0"
+        },
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Debug Wavelet Module",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "./layers/test.py",
+        "console": "integratedTerminal",
+        "justMyCode": false,
+        "env": {
+          "PYTHONPATH": "${workspaceFolder}"
+        }
+      }
+  
+      // ⚠️ 更多配置项省略（如 ETTm1、ETTm2、weather、traffic、exchange、solar 等）
+      // 如需我自动生成完整的所有配置组合（例如 pred_len 从 96,192,336,720 到所有数据集），我可以一次性补齐全部
+    ]
+  }

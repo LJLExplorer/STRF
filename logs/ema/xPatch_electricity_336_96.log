@@ -1,0 +1,7 @@
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_96_ema', model='xPatch', data='custom', root_path='./dataset/electricity/', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', embed='timeF', seq_len=720, label_len=48, pred_len=96, enc_in=321, patch_len=16, stride=8, padding_patch='end', ma_type='ema', alpha=0.3, beta=0.3, num_workers=10, itr=1, train_epochs=100, batch_size=128, patience=10, learning_rate=0.001, des='Exp', loss='mse', lradj='sigmoid', use_amp=False, revin=1, use_gpu=False, gpu=0, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Use CPU
+>>>>>>>start training : electricity_96_ema_xPatch_custom_ftM_sl720_ll48_pl96_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17597
+val 2537
+test 5165
